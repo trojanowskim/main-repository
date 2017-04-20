@@ -1,7 +1,7 @@
-[FireWeb](https://web.facebook.com/FireWebTeam/) — Programming Science Club
+["FireWeb"](https://web.facebook.com/FireWebTeam/) — Programming Science Club
 ==================================================
 
-Dywiza:
+Informacje ogólne:
 --------------------------------------
 
 Koło Naukowe zrzeszające pasjonatów programowania działające przy Szkole Głównej Służby Pożarniczej w Warszawie.
@@ -31,14 +31,14 @@ Swoje cele realizujemy poprzez:
 Opiekunowie koła:
 ----------------------------
 
-- mł. bryg. dr inż. Adam Krasuski
-- st. kpt. mgr inż. Karol Kreński
-- st. kpt. mgr inż. Stanisław Łazowy
+- mł. bryg. dr inż. Adam Krasuski,
+- st. kpt. mgr inż. Karol Kreński,
+- st. kpt. mgr inż. Stanisław Łazowy.
 
 
 Zarząd koła:
 ----------------------------
 
-- mł. ogn. pchor. Arkadiusz Jelonek - prezes
-- str. pchor. Hubert Zawistowski - wiceprezes
-- str. pchor. Adrian Grzesik - sekretarz
+- mł. ogn. pchor. Arkadiusz Jelonek - prezes,
+- str. pchor. Hubert Zawistowski - wiceprezes,
+- str. pchor. Adrian Grzesik - sekretarz.
