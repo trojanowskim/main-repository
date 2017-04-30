@@ -1,1 +1,1 @@
-Napisz funkcjê, która wypisz liczby podzielne przez 7 z podanego zakresu np. z przedzia³u (2,42) wypisze 7,14,21,28,35,42
+Napisz funkcjê, która wypisze liczby podzielne przez 7 z podanego zakresu np. z przedzia³u (2,42) wypisze 7,14,21,28,35,42
