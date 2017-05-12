@@ -12,5 +12,5 @@ for i in range(len(word) - 1):
     j += 1
 
 if a == 1:
-    amount = 0
+    a = 0
 print('bigram "{}" recurs {} times'.format(m, a))
