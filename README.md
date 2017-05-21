@@ -32,13 +32,13 @@ Opiekunowie koła:
 ----------------------------
 
 - mł. bryg. dr inż. Adam Krasuski,
-- st. kpt. mgr inż. Karol Kreński,
+- mł. bryg. mgr inż. Karol Kreński,
 - st. kpt. mgr inż. Stanisław Łazowy.
 
 
 Zarząd koła:
 ----------------------------
 
-- mł. ogn. pchor. Arkadiusz Jelonek - prezes,
-- str. pchor. Hubert Zawistowski - wiceprezes,
-- str. pchor. Adrian Grzesik - sekretarz.
+- ogn. pchor. Arkadiusz Jelonek - prezes,
+- st. str. pchor. Hubert Zawistowski - wiceprezes,
+- st. str. pchor. Adrian Grzesik - sekretarz.
