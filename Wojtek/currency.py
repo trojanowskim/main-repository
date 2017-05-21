@@ -9,5 +9,5 @@ curr = json.load(x)
 print('actual for: ', curr['date'])
 
 for i in curr['rates']:
-    value = cred / curr['rates'][i]
+    value = cred * curr['rates'][i]
     print("you can buy %.2f" % value, i)
