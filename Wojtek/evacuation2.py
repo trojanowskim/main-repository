@@ -1,4 +1,3 @@
-from numpy import random as rd
 import json
 
 file = open("D:\eggman.json", 'r')
@@ -6,22 +5,19 @@ dic = json.load(file)
 first_floor = dic["1"]["EVACUEES"]
 v_distance = 12
 
-class Evacuee:
-    def __init__(self, h_s, v_s, p_e):
-        self.h_speed = h_s
-        self.v_speed = v_s
-        self.pre_evacuation = p_e
-        self.h_distance = rd.uniform(10, 80, 1)
-        self.time = self.pre_evacuation + v_distance/self.v_speed + self.h_distance/self.h_speed
 
+class Evacuee:
+    def __init__(self, hs, vd, pe, hd):
+        self.h_speed = hs
+        self.v_speed = vd
+        self.pre_evacuation = pe
+        self.h_distance = hd
+        self.time = self.pre_evacuation + v_distance/self.v_speed + self.h_distance/self.h_speed
 
 
 class Evacuees:
     def __init__(self, lista):
         self.evacuees = lista
-
-    def add_peds(self, p):
-        self.evacuees = p
 
     def get_evacuation_time(self):
         self.time = []
@@ -43,8 +39,15 @@ for k, v in first_floor.items():
     h_s = first_floor[k]["H_SPEED"]
     v_s = first_floor[k]["V_SPEED"]
     p_e = first_floor[k]["PRE_EVACUATION"]
-    evacs.append(Evacuee(h_s, v_s, p_e))
-    i += 1
+    points = first_floor[k]['ROADMAP']
+    h_d = 0
+    for i in points:
+        x = i[0]
+        y = i[1]
+        h_d += (x ** 2 + y ** 2) ** 0.5
+
+    evacs.append(Evacuee(h_s, v_s, p_e, h_d))
+
 
 ev_total = Evacuees(evacs)
 lag = ev_total.get_evacuation_time()
