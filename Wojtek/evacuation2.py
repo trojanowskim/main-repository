@@ -33,19 +33,24 @@ class Evacuees:
 
 
 evacs = []
-i = 0
 
 for k, v in first_floor.items():
     h_s = first_floor[k]["H_SPEED"]
     v_s = first_floor[k]["V_SPEED"]
     p_e = first_floor[k]["PRE_EVACUATION"]
-    points = first_floor[k]['ROADMAP']
+    points = (first_floor[k]['ROADMAP'])
+    points.insert(0, first_floor[k]['ORIGIN'])
     h_d = 0
-    for i in points:
-        x = i[0]
-        y = i[1]
-        h_d += (x ** 2 + y ** 2) ** 0.5
-
+    j = 0
+    for i in range(len(points)-1):
+        pts1 = points[j]
+        pts2 = points[j+1]
+        x1 = pts1[0]
+        y1 = pts1[1]
+        x2 = pts2[0]
+        y2 = pts2[1]
+        h_d += ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
+        j += 1
     evacs.append(Evacuee(h_s, v_s, p_e, h_d))
 
 
