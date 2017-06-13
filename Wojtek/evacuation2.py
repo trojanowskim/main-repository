@@ -40,6 +40,9 @@ for k, v in first_floor.items():
     p_e = first_floor[k]["PRE_EVACUATION"]
     points = (first_floor[k]['ROADMAP'])
     points.insert(0, first_floor[k]['ORIGIN'])
+    x, y = zip(*points)
+    print(x, " ", type(x))
+    plt.plot(x, y, "--", linewidth=1)
     h_d = 0
     j = 0
     for i in range(len(points)-1):
@@ -59,3 +62,12 @@ lag = ev_total.get_evacuation_time()
 lag = float(lag)
 name = ev_total.get_lagger(lag)
 print("The last evacuee was E{} with {}s time.".format(name, lag))
+file2 = open("D:\geom.json", "r")
+geom = json.load(file2)
+obst = geom["obstacles"]["1"]
+for i in obst:
+    corners_x = [i[0][0], i[1][0], i[2][0], i[3][0]]
+    corners_y = [i[0][1], i[1][1], i[2][1], i[3][1]]
+    plt.plot(corners_x, corners_y, "r", lw=3)
+plt.show()
+
