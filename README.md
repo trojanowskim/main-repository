@@ -28,12 +28,10 @@ Swoje cele realizujemy poprzez:
 - testowanie nowoczesnych technologii oraz narzędzi informatycznych.
 
 
-Opiekunowie koła:
+Opiekun koła:
 ----------------------------
 
-- mł. bryg. dr inż. Adam Krasuski,
-- mł. bryg. mgr inż. Karol Kreński,
-- st. kpt. mgr inż. Stanisław Łazowy.
+- mł. bryg. dr inż. Adam Krasuski
 
 
 Zarząd koła:
