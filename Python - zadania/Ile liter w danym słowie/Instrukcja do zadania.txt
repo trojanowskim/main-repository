@@ -1,5 +1,0 @@
-Napisz funkcjê, która sprawdzi ile razy dana litera wystêpuje w danym s³owie.
-
-Przyk³ad:
-
-W s³owie "rabarbar" wystêpujê 3 razy litera "r"
