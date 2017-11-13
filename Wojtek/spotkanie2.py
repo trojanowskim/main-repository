@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 class Server(BaseHTTPRequestHandler):
     def do_GET(self):               # dyskusja klient-serwer metodą GET - co mu odpowiadamy/wysyłamy
         self.send_response(200)     #kod oznaczający 'jest OK'
-        self.send_header('content-type', 'text/html') #co będziemy wysyłać
+        self.send_header('content-type', 'image/html') #co będziemy wysyłać
         self.end_headers()
         query = urlparse(self.path).query #bierzemy to co jest po katalogach, szczegoly zapytania
         qc = dict(q.split("=") for q in query.split("&")) #tworzy słownik rozbijając zapytanie
@@ -17,7 +17,7 @@ class Server(BaseHTTPRequestHandler):
             tri.create_traj()
 
         print(qc)
-        dane = '<img src=C:\pliki_pyri.jpg>'
+        dane = '<img src=../pliki_pyri.jpg>'
 
 
         self.wfile.write(bytes(dane, "utf8"))  # wyślij do przeglądarki tekst, jako bajty, kodowanie utf-8
@@ -47,7 +47,7 @@ class Triangle:
         yes.insert(0, (yes[0] * -1))
         plt.plot(xes, yes)
         plt.show()
-        plt.savefig('C:\plik.jpg')
+        plt.savefig('plik.jpg')
 
 
 
